@@ -12,7 +12,7 @@ for(int i=0; i<n; i++){
 int avg;
 int sum=0;
 for(int i=0; i<n; i++){
-    sum=arr[i]+arr[i+1];
+    sum=arr[i]+sum;
 }
 
 avg=sum/n;
