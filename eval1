@@ -1,0 +1,59 @@
+def add(dic1,dic2,dic3,dic4):
+    book=input("enter name of book you want to add ")
+    author=input("enter author")
+    isbn=input("enter isbn")
+    genre=input("enter genre")
+    status=input("availibility-y/n")
+    dic1[book]=isbn
+    dic2[genre]=isbn
+    dic3[author]=isbn
+    dic4[status]=isbn
+    print(dic1)
+    print(dic2)
+    print(dic3)
+    print(dic4)
+
+def search(dic3):
+    n=input("enter isbn")
+    for key,val in dic3.items():
+        if value==n:
+        print(key)
+def update(dic1,dic2,dic3,dic4):
+    n=input("press 1 to update name, 2 for genre,3 for author,4 for status")
+    if n==1:
+        name=input("enter new name")
+        isbn1=input("enter the isbn")
+        for key1,val1 in dic1.items():
+            if val1==isbn1:
+                dic1[name]=isbn1
+    if n==2:
+        genre=input("enter new author")
+        isbn2=input("enter isbn")
+        for key1,val2 in dic2.items():
+            if val2==isbn2:
+                dic2[genre]=isbn2
+    if n==3:
+        author=input("enter new author")
+        isbn3=input("enter isbn")
+        for key3,val3 in dict3.items():
+            if val3==isbn3:
+                dic3[author]=isbn3
+    if n==4:
+        status=input("enter new stat")
+        isbn4=("enter isbn")
+        for key4,val4 in dic4.items():
+            if val4==isbn4:
+                dic4[status]=isbn4
+    print("success")            
+def report(dic1,dic2,dic3,dic4):
+    print(dic2)
+    print(dic1)
+dic1={"fall_stars":1,"knight":2}
+dic2={"romcom":1, "thriller":2}
+dic3={"david":1,"nviz":2}
+dic4={"y":1,"y":2}
+#add(dic1,dic2,dic3,dic4)
+search(dic3)
+update(dic1,dic2,dic3,dic4)
+report(dic1,dic2,dic3,dic4)
+
